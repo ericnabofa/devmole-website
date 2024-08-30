@@ -11,30 +11,47 @@
     <!-- Header -->
      <header>
         <nav>
-            <div class="container">
                 <h1 class="logo">Devmole</h1>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    🌙
+                </button>
         </nav>
      </header>
 
+     <main>
      <!-- Hero Section -->
       <section id="home" class="hero">
         <div class="container">
-            <h1>Hi, I'm Devmole</h1>
-            <p>Innovative Software Developer</p>
-            <a href="#portfolio" class="btn">View my work</a>
-            <a href="#contact" class="btn brn-secondary">Get in Touch</a>
-        </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm Devmole</h1>
+                    <p>Innovative Software Developer</p>
+                    <a href="#portfolio" class="btn">View my work</a>
+                    <a href="#contact" class="btn brn-secondary">Get in Touch</a>
+                </div>
+                <div class="hero-image">
+                    <img src="eric.jpeg" alt="Eric">
+                </div>
+            </div> 
       </section>
 
       <!-- Introduction -->
+       <section id="about" class="intro">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio. Here you'll find my skills, projects, and more about what I do.</p>
+        </div>
+       </section>
+
+       <!-- Featured Skills-->
        <section id="skills" class="skills">
         <div class="container">
             <h2>Featured Skills</h2>
@@ -86,6 +103,14 @@
                 </div>
             </div>
         </section>
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2>Blog</h2>
+                <p>Check out my latest articles</p>
+            </div>
+
+        </section>
+    </main>
 
         <!-- Footer -->
          <footer>
@@ -93,5 +118,7 @@
                 <p>&copy; 2024 Devmole. All rights reserved.</p>
             </div>
          </footer>
+
+         <script src="script.js"></script>
 </body>
 </html>
