@@ -29,6 +29,40 @@ header.dark-mode {
     background-color: #00796b;
 }
 
+.hero.dark-mode {
+    background-color: #004d40; /* Darker Teal Blue */
+}
+
+.skills.dark-mode {
+    background-color: #333; /* Darker Backgroubd for Dark Mode */
+}
+
+.skills h2,
+.skill h3 {
+    color: #a8e6cf; /* Light Mint Green */
+}
+
+.contact.dark-mode {
+    background-color: #1c1c1c; /* Dark Background for contact section */
+}
+
+.contact h2 {
+    color: #a8e6cf; /* Light Mint Green */ 
+}
+
+.contact-inputs {
+    border: 1px solid #555; /* Darker Border Color */
+    background-color: #333; /* Daarker input background */
+    color: #e0e0e0; /* Lighter text color */
+}
+
+.contact-inputs::placeholder {
+    color: #888; /* Placeholder text color */
+}
+
+button {
+    background-color: #004d40; /* Darker teal blue for buttons */
+}
 /* Other Styles */
 .container {
     width: 90%;
@@ -236,6 +270,118 @@ nav {
     color: #008080; /* Teal Blue */
 }
 
+/* Contact */
+.contact {
+    padding: 3rem 0;
+    background-color: #e0f2f1; /* Light Teal Blue Background */
+}
+.contact-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+}
+
+.contact-left {
+    flex: 1;
+    /* display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px; */
+}
+
+.contact-right {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-right img {
+    max-width: 100%;
+    height: auto;
+    /* width: 500px; */
+}
+
+.contact-inputs{
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px; */
+}
+
+button {
+    background-color: #008080; /* Teal Blue */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button img {
+    height: 15px;
+    vertical-align: middle;
+}
+
+
+/* .contact-title p {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+} */
+
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+/* .contact-inputs:focus {
+    border: 2px solid #a8e6cf;
+} */
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+/* .contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #008080;
+    cursor: pointer;
+} */
+
+/* .contact-left button img {
+    height: 15px;
+} */
+
+
+
+@media (max-width:800px) {
+    .contact-inputs {
+        width: 80vw;
+    }
+    .contact-right {
+        display: none;
+    }
+    
+}
 /* Footer */
 footer {
     background-color: #333;
